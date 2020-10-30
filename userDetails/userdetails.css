@@ -1,0 +1,24 @@
+body{
+    text-align: center;
+    background-image: url('../assets/bg.png');
+}
+
+
+.loginBox{
+    border-radius: 10px;
+    background-color: #fefefe;
+    margin-left: 27%;
+    width: 50%;
+    padding: 5%;
+    margin-top: 2%;
+    border: 1px solid white;
+    margin-bottom: 5%;
+}
+.inputField input{
+    width: 100%;
+    margin: 10px;
+}
+
+#gtLogodesign{
+    height: 200px;
+}

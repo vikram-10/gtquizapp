@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GT Quiz App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Serif+Text&family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Serif+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="quizform.css">
+</head>
+<body>
+    <script src="quizform.js"></script>     
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html">The Guindy Times</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <img id="gtLogodesign" src="../assets/gtlogo.png">
+ <div class="mainQuizForm">
+<form onsubmit=submitform() id="generateQuestions">
+    <div class="questionSeparation">
+    <label for="q1">1) Who was the greatest King?!</label>
+    <br>
+    <input type="radio" id="male" name="gender" value="v1">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="v2">
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="v3">
+    <label for="other">Other</label>
+    <br>
+</div>
+<div class="questionSeparation">
+    <label for="q1">1) Who was India's first leader?!</label>
+    <br>
+    <input type="radio" id="male" name="gender" value="v1">
+    <label for="male">apj</label>
+    <input type="radio" id="female" name="gender" value="v2">
+    <label for="female">vik</label>
+    <input type="radio" id="other" name="gender" value="v3">
+    <label for="other">Other</label>
+    <br>
+</div>
+<div class="questionSeparation">
+    <label for="q1">1) Who was the greatest King?!</label>
+    <br>
+    <input type="radio" id="male" name="gender" value="v1">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="v2">
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="v3">
+    <label for="other">Other</label>
+    <br>
+</div>
+<div class="questionSeparation">
+    <label for="q1">1) Who was the greatest King?!</label>
+    <br>
+    <input type="text" id="male" name="gender">
+    <br>
+</div>
+<div class="questionSeparation">
+    <label for="q1">1) Who was the ______ greatest King?!</label>
+    <br>
+    <input type="text" id="male" name="gender">
+    <br>
+</div>
+    <button class="btn btn-primary">Submit!</button>
+    <br>
+    <br>
+</form>
+ </div>    
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+</body>
+</html>

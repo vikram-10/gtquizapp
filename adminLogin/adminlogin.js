@@ -7,7 +7,7 @@ const adminLogin=async()=>{
             "adminPass":document.getElementById('adminPass').value,
         }
         console.log(data);
-          let fetcher= await fetch('http://localhost:3000/adminlogin', {
+          let fetcher= await fetch('https://gtquizapp.herokuapp.com/adminlogin', {
             method: 'POST', 
             mode: 'cors', 
             cache: 'no-cache',

@@ -16,7 +16,7 @@ document.body.append(navbar);
 
 const adminDashboard=async()=>{
     try{
-          let fetcher= await fetch('http://localhost:3000/getusers', {
+          let fetcher= await fetch('https://gtquizapp.herokuapp.com/getusers', {
             method: 'GET', 
             mode: 'cors', 
             cache: 'no-cache',

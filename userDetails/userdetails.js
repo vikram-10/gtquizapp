@@ -11,7 +11,7 @@ const submitForm=async()=>{
               "userContactNum":document.getElementById('userContactNum').value
           }
           console.log(data);
-            let fetcher= await fetch('http://localhost:3000/userlogin', {
+            let fetcher= await fetch('https://gtquizapp.herokuapp.com/userlogin', {
               method: 'POST', 
               mode: 'cors', 
               cache: 'no-cache',

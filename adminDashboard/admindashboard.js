@@ -37,14 +37,9 @@ const adminDashboard=async()=>{
             <h5 class="card-title">${element.userName}</h5>
             <h6 class="card-subtitle mb-2 text-muted">${element.userEmail}</h6>
             <h6 class="card-subtitle mb-2 text-muted">Insta Id: @${element.userInstaId}</h6>
-            <h6 class="card-subtitle mb-2 text-muted"><span id="spanText"></span></h6>
+            <h6 class="card-subtitle mb-2 text-muted">${element.answers}</h6>
             </div>`
             document.body.append(cards);
-            let answerSpace=document.getElementById('spanText');
-            element.answers.forEach(ele=>{
-              answerSpace.innerHTML+=`<h6 class="card-subtitle mb-2 text-muted">${ele}</h6><br>`
-            })
-            cards.append(answerSpace);
          });
         }
     catch(err){

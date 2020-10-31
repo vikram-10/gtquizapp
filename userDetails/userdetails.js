@@ -2,7 +2,6 @@ const submitForm=async()=>{
     event.preventDefault();
     let userEmail=document.getElementById('userEmail').value
     localStorage.setItem('email',userEmail);
-    alert(userEmail);
       try{
           let data={
               "userName":document.getElementById('userName').value,

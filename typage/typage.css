@@ -1,0 +1,18 @@
+body{
+    text-align: center;
+    background-image: url('/assets/bg.png');
+}
+.mainHeading{
+    font-weight: 100;
+    font-size: 80px;
+  margin-top: 10%; 
+  color: white;
+  font-family: 'Anton', sans-serif;
+font-family: 'DM Serif Text', serif;
+font-family: 'Raleway', sans-serif;
+}
+
+
+#gtLogodesign{
+    height: 200px;
+}

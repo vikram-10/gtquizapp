@@ -31,14 +31,20 @@ const adminDashboard=async()=>{
          fetcherData.forEach(element => {
             let cards=document.createElement('div');
             cards.setAttribute('class','card');
+            cards.setAttribute('id','designCard');
             cards.setAttribute('style','width:18rem;');
             cards.innerHTML=`  <div class="card-body">
             <h5 class="card-title">${element.userName}</h5>
             <h6 class="card-subtitle mb-2 text-muted">${element.userEmail}</h6>
-            <h6 class="card-subtitle mb-2 text-muted">${element.userInstaId}</h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h6 class="card-subtitle mb-2 text-muted">Insta Id: @${element.userInstaId}</h6>
+            <h6 class="card-subtitle mb-2 text-muted"><span id="spanText"></span></h6>
             </div>`
             document.body.append(cards);
+            let answerSpace=document.getElementById('spanText');
+            element.answers.forEach(ele=>{
+              answerSpace.innerHTML+=`<h6 class="card-subtitle mb-2 text-muted">${ele}</h6><br>`
+            })
+            cards.append(answerSpace);
          });
         }
     catch(err){

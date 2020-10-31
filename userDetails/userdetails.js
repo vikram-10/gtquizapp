@@ -26,6 +26,10 @@ const submitForm=async()=>{
            if(fetcherData.status==1){
                window.location.href='../quiz/quizform.html';
            }
+           else{
+             alert("User has already attempted");
+             window.location.href='../index.html';
+           }
           }
       catch(err){
           console.log(err);

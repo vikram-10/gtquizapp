@@ -20,3 +20,7 @@ body{
     font-size: 20px;
     padding: 10px;
 }
+
+.mainQuizForm input[type="text"]{
+    width: 100%;
+}

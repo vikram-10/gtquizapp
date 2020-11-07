@@ -24,3 +24,7 @@ body{
 .mainQuizForm input[type="text"]{
     width: 100%;
 }
+
+.questionSeparation input{
+    visibility: hidden;
+}

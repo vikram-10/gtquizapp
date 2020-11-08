@@ -3,7 +3,7 @@ const submitform=async()=>{
     let userEmail=localStorage.getItem('email');
     let ansArray=[];
     try{
-        for(var i=1;i<5;i++){
+        for(var i=1;i<=30;i++){
             var q = document.getElementsByName(`q${i}`);
             var q_value;
         for(var j = 0; j < q.length; j++){
@@ -12,10 +12,10 @@ const submitform=async()=>{
                     ansArray.push(`q${i}: `+q_value);
             }
         }
-        // if(i>25){
-        //     let ans=document.getElementById(`q${i}`).value;
-        //     ansArray.push(`q${i}: `+ans);
-        // }
+        if(i>25){
+            let ans=document.getElementById(`q${i}`).value;
+            ansArray.push(`q${i}: `+ans);
+        }
         }
         console.log(ansArray);
         let fetcher= await fetch('https://gtquizapp.herokuapp.com/submitans', {
